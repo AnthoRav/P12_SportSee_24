@@ -1,0 +1,45 @@
+.activity {
+  width: 800px;
+  background-color: #FBFBFB;
+  &_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-inline: 30px;
+    &-infos {
+      display: flex;
+      color: #74798C;
+      gap: 30px;
+      font-size: 14px;
+    }
+    &-infos1 {
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      margin: 0 0.5rem 0 0;
+      border-radius: 50%;
+      background-color: #282D30;
+    }
+    &-infos2 {
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      margin: 0 0.5rem 0 0;
+      border-radius: 50%;
+      background-color: #E60000;
+    }
+  }
+}
+.tooltip {
+  background-color: #E60000;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

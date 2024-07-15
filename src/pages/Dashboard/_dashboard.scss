@@ -1,0 +1,18 @@
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  &_dash {
+    display: flex;
+    gap: 30px;
+  }
+  &_chart {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    &-details {
+      display: flex;
+      gap: 30px;
+    }
+  }
+}
