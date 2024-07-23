@@ -19,7 +19,7 @@ function Header () {
           Profil
         </Link>
         <Link className="header_nav-link" to="/reglage">
-          Réglage
+          Réglages
         </Link>
         <Link className="header_nav-link" to="/communite">
           Communauté

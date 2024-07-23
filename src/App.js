@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './style/main.scss'
+import { default_userId } from './service/config';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <div className='blockApp'>
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Navigate replace to={`/user/12/`} />} />
+          <Route path="/" element={<Navigate replace to={`/user/${default_userId}/`} />} />
           <Route path='/user/:userId' element={<Dashboard />} />
           <Route path="/error" element={<ErrorPage />} />
         </Routes>

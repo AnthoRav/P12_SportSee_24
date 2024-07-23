@@ -9,7 +9,7 @@ const ErrorPage = () => {
   let errorMessage;
   switch (errorType) {
     case '404':
-      errorMessage = '404 - Page Not Found';
+      errorMessage = '404 - User not found';
       break;
     case '500':
       errorMessage = '500 - Internal Server Error';

@@ -5,6 +5,10 @@
   background-color: #FBFBFB;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.02);
   border-radius: 5px;
+  @include laptop-2 {
+    width: 215px;
+    height: 215px;
+  }
   h3 {
     font-size: 15px;
     margin: 25px;

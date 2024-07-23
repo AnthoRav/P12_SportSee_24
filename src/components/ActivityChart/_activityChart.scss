@@ -1,6 +1,9 @@
 .activity {
-  width: 800px;
+  //max-width: 800px;
   background-color: #FBFBFB;
+  @include laptop-2 {
+    width: 680px;
+  }
   &_title {
     display: flex;
     align-items: center;

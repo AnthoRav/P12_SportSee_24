@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
+  @include laptop-2 {
+    gap: 31px;
+  }
 }
 .nutrition {
   display: flex;
@@ -13,10 +16,20 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
   border-radius: 5px;
   gap: 25px;
+  @include laptop-2 {
+    width: 180px;
+    height: 100px;
+    gap: 15px;
+  }
 &_icon {
   width: 60px;
   height: 60px;
   margin-left: 30px;
+  @include laptop-2 {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+  }
 }
 &_info {
   display: flex;
@@ -27,10 +40,16 @@
   &-amount {
     font-size: 20px;
     color: #282D30;
+    @include laptop-2 {
+      font-size: 16px;
+    }
   }
   &-label {
     font-size: 14px;
     color: #74798C;
+    @include laptop-2 {
+      font-size: 13px;
+    }
   }
 }
 }

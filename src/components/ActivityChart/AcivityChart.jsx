@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { formatActivityData } from '../../models/models';
 import dataService from '../../service/globalService';
+import { formatActivityData } from '../../mappers/userDataMapper';
 
 const CustomTooltip = ({ active, payload }) => {
   return active && payload ? (
@@ -55,7 +55,7 @@ const ActivityChart = ({ userId }) => {
           </div>
         </div>
       </div>
-      <ResponsiveContainer aspect={4} width={800}>
+      <ResponsiveContainer aspect={4} max-width={800}>
         <BarChart data={data} margin={{ top: 45, right: 0, left: 0, bottom: 5 }} barCategoryGap={35}>
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
           <XAxis dataKey="day" dx={-1} dy={16} axisLine={false} tickLine={false} 

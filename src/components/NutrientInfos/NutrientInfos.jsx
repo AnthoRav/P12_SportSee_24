@@ -5,7 +5,7 @@ import IconCal from '../../assets/energy-icon.png';
 import IconProt from '../../assets/protein-icon.png';
 import IconCarb from '../../assets/carbs-icon.png';
 import IconFat from '../../assets/fat-icon.png';
-import { formatCalories } from '../../models/models';
+import { formatCalories } from '../../mappers/userDataMapper';
 import { useNavigate } from 'react-router-dom';
 
 const Macronutrients = ({ icon, amount, label }) => (

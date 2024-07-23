@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
-import { formatAverageSessionsData } from '../../models/models';
+import { formatAverageSessionsData } from '../../mappers/userDataMapper';
 import dataService from '../../service/globalService';
 import { useNavigate } from 'react-router-dom';
 

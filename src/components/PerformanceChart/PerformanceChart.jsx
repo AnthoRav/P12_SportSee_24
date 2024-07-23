@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import dataService from '../../service/globalService';
-import { formatPerformanceData, kindTranslation } from '../../models/models';
+import { formatPerformanceData, kindTranslation } from '../../mappers/userDataMapper';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -28,10 +28,10 @@ export default function PerformanceChart({ userId }) {
 
   return (
     <div className='performanceContainer'>
-      <ResponsiveContainer  >
+      <ResponsiveContainer width={258} >
         <RadarChart data={data} cx="50%" cy="50%" outerRadius="70%" >
           <PolarGrid gridType="polygon" radialLines={false} />
-          <PolarAngleAxis dataKey="kind" tick={{ fill: "white", fontSize: 12 }} dy={4} />
+          <PolarAngleAxis dataKey="kind" tick={{ fill: "white", fontSize: 12 }} dy={4} className='tick' />
           <PolarRadiusAxis tick={false} axisLine={false} angle={30} domain={[0, 'auto']} />
           <Radar name="Performance" dataKey="value" stroke="none" fill="red" fillOpacity={0.6} />
           <Tooltip />

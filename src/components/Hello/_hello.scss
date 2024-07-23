@@ -2,6 +2,9 @@
 }
 h1 {
   font-size: 48px;
+  @include laptop-2 {
+    font-size: 42px;
+  }
 }
 h2 {
   font-size: 18px;

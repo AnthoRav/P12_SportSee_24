@@ -2,17 +2,32 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
+  @include laptop-2 {
+    gap: 50px;
+  }
   &_dash {
     display: flex;
     gap: 30px;
+    @include laptop-l {
+      gap: 20px;
+    }
   }
   &_chart {
     display: flex;
     flex-direction: column;
     gap: 80px;
+    @include laptop-2 {
+      gap: 50px;
+    }
     &-details {
       display: flex;
       gap: 30px;
+      @include laptop-l {
+        gap: 20px;
+      }
+      @include laptop-2 {
+        gap: 15px;
+      }
     }
   }
 }

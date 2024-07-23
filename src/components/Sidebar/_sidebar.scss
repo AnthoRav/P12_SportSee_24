@@ -8,21 +8,20 @@
   min-height: 100vh;
   //position: absolute;
   gap: 200px;
+  @include laptop-2 {
+    width: 85px;
+  }
   &_nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    // &-link {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   background-color: white;
-    //   width: 64px;
-    //   height: 64px;
-    //   border-radius: 6px;
-    //   margin: 10px 0;
-    // }
+    img {
+      @include laptop-2 {
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
   &_right {
     font-size: 12px;

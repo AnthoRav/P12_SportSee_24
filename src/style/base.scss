@@ -6,4 +6,10 @@ body {
 .blockApp {
   display: inline-flex;
   gap: 100px;
+  @include laptop-l {
+    gap: 50px;
+  }
+  @include laptop-2 {
+    gap: 25px;
+  }
 }
