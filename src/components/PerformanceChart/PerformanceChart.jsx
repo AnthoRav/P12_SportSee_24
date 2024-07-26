@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import dataService from '../../service/globalService';
-import { formatPerformanceData, kindTranslation } from '../../mappers/userDataMapper';
+import { formatPerformanceData } from '../../mappers/userDataMapper';
 import { useNavigate } from 'react-router-dom';
 
 
-export default function PerformanceChart({ userId }) {
+const PerformanceChart = ({ userId }) => {
   const [data, setData] = useState([]);
   const navigate = useNavigate();
 
@@ -15,7 +15,6 @@ export default function PerformanceChart({ userId }) {
       .then(data => {
         //console.log('Fetched data:', data); // Ajout pour vérifier les données
         const formattedData = formatPerformanceData(data);
-        //console.log('Formatted data:', formattedData); // Ajout pour vérifier les données formatées
         // Inverser les données pour obtenir l'ordre correct des labels
       const reorderedData = formattedData.reverse();
         setData(reorderedData);
@@ -43,3 +42,5 @@ export default function PerformanceChart({ userId }) {
 PerformanceChart.prototype = {
   userId: PropTypes.number.isRequired
 }
+
+export default PerformanceChart

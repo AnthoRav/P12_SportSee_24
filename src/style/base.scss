@@ -5,6 +5,7 @@ body {
 }
 .blockApp {
   display: inline-flex;
+  width: 100%;
   gap: 100px;
   @include laptop-l {
     gap: 50px;

@@ -8,7 +8,7 @@ import DumIcon from '../../assets/side-icon-dum.png';
  * @component lateral bar with links for diferent activities
  */
 
-export default function Sidebar() {
+const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar_nav">
@@ -31,3 +31,5 @@ export default function Sidebar() {
     </div>
   );
 }
+
+export default Sidebar

@@ -12,7 +12,6 @@ const ScoreChart = ({ userId }) => {
     dataService.getUser(userId)
       .then(data => {
         setScore(data.data.todayScore || data.data.score || 0);
-        //console.log('Fetched data:', data.data.todayScore)
       })
       .catch(error => {
         console.error('Error fetching data:', error.message);

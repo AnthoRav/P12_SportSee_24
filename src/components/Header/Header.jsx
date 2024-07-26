@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
  * @component top navbar with links for Homepage, Profile page, Réglage, Comunity.
  */
 
-function Header () {
+const Header = () => {
   return (
     <header className='header'>
       <Link to="/">

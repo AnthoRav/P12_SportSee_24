@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom";
 import dataService from '../../service/globalService';
 
-export default function Hello({ userId }) {
+ const Hello = ({ userId }) => {
   const [userInfos, setuserInfos] = useState([]);
   const navigate = useNavigate();
   
@@ -31,3 +31,5 @@ export default function Hello({ userId }) {
 Hello.propTypes = {
   userId: PropTypes.number.isRequired
 };
+
+export default Hello

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types';
 import dataService from '../../service/globalService';
@@ -20,7 +21,7 @@ const Macronutrients = ({ icon, amount, label }) => (
   </div>
   );
 
-export default function NutrientInfos({ userId }) {
+const NutrientInfos = ({ userId }) => {
   const [keyData, setKeyData] = useState({});
   const navigate = useNavigate();
 
@@ -54,9 +55,11 @@ Macronutrients.prototype = {
 NutrientInfos.prototype = {
   userId: PropTypes.number.isRequired,
   keyData: PropTypes.shape({
-    calorieCount: PropTypes.numberisRequired,
-    proteinCount: PropTypes.numberisRequired,
-    carbohydrateCount: PropTypes.numberisRequired,
-    lipidCount: PropTypes.numberisRequired,
+    calorieCount: PropTypes.number.isRequired,
+    proteinCount: PropTypes.number.isRequired,
+    carbohydrateCount: PropTypes.number.isRequired,
+    lipidCount: PropTypes.number.isRequired,
   }).isRequired
 }
+
+export default NutrientInfos

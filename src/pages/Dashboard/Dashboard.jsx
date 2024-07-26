@@ -8,7 +8,7 @@ import PerformanceChart from '../../components/PerformanceChart/PerformanceChart
 import ScoreChart from '../../components/ScoreChart/ScoreChart';
 import NutrientInfos from '../../components/NutrientInfos/NutrientInfos';
 
-export default function Dashboard() {
+const Dashboard = () => {
   const { userId } = useParams();
   const numericUserId = Number(userId);
 
@@ -33,3 +33,4 @@ Dashboard.propTypes = {
   numericUserId: PropTypes.number
 };
 
+export default Dashboard
