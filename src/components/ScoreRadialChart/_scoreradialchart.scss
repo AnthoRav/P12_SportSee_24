@@ -1,3 +1,4 @@
+
 .scoreContainer {
   position: relative;
   height: 263px;
@@ -11,10 +12,13 @@
   }
   h3 {
     font-size: 15px;
-    margin: 25px;
+    margin: 25px 25px 0 25px;
+    @include laptop-2 {
+      margin: 20px 20px 3px 20px;
+    }
   }
   &_chart {
-    margin-top: -70px;
+    margin-top: -40px;
   }
 }
 .label {
@@ -33,6 +37,11 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: white;
+  @include laptop-2 {
+    width: 110px;
+    height: 110px;
+    font-size: 20px;
+  }
 }
 .label span{
   color: #74798C;
@@ -40,4 +49,7 @@
   font-weight: 500;
   max-width: 100px;
   text-align: center;
+  @include laptop-2 {
+    font-size: 14px;
+  }
 }

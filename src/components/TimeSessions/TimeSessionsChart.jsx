@@ -1,6 +1,7 @@
+// @ts-nocheck
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { formatAverageSessionsData } from '../../mappers/userDataMapper';
 import dataService from '../../service/globalService';
 import { useNavigate } from 'react-router-dom';
