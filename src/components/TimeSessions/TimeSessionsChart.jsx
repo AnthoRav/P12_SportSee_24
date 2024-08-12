@@ -74,7 +74,7 @@ const TimeSessionsChart = ({ userId }) => {
           top: 0,
           right: 0,
           bottom: 0,
-          left: `${(hoverIndex / (data.length - 3)) * 100}%`, // en vrai -1 mais ajuster pour les points fictifs
+          left: `${(hoverIndex / (data.length - 1)) * 100}%`,
           backgroundColor: 'rgba(0, 0, 0, 0.1)',
           pointerEvents: 'none',
         }} />
