@@ -9,16 +9,16 @@ const ErrorPage = () => {
   let errorMessage;
   switch (errorType) {
     case '404':
-      errorMessage = '404 - User not found';
+      errorMessage = "Page non trouvée. Il semble que la page que vous recherchez n'existe pas.";
       break;
     case '500':
-      errorMessage = '500 - Internal Server Error';
+      errorMessage = "Erreur du serveur. Un problème est survenu de notre côté. Veuillez réessayer plus tard.";
       break;
     case 'mock':
-      errorMessage = 'Mock Data Issue';
+      errorMessage = "Mock Data Issue";
       break;
     default:
-      errorMessage = 'An unexpected error has occurred.';
+      errorMessage = "Quelque chose s'est mal passé. Veuillez vérifier votre connexion ou réessayer plus tard.";
   }
 
   return (
